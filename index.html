@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLR HCF | Server Oficial</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #0ff;
+  text-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff,
+    0 0 80px #00f,
+    0 0 100px #00f;
+  animation: glow 2s infinite alternate;
+  position: relative;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+  100% { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #00f, 0 0 100px #00f; }
+}
+
+.particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #f00;
+  border-radius: 50%;
+  animation: particle 2s infinite linear;
+}
+
+@keyframes particle {
+  0% { transform: translate(0,0) scale(1); opacity: 1; }
+  100% { transform: translate(200px,-200px) scale(0); opacity: 0; }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e63946;
+}
+
+/* HERO */
+.hero {
+    .hero {
+  background-image: url('https://i.imgur.com/dzyF1Y8.png');
+}
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+  color: #e63946;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.rangos img, .info img {
+  width: 250px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.rangos img:hover, .info img:hover {
+  transform: scale(1.1);
+}
+
+.btn-discord {
+  background-color: #7289da;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-discord:hover {
+  background-color: #5b6ead;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    CLR
+    <div class="particle" style="top:20px;left:20px;"></div>
+    <div class="particle" style="top:40px;left:60px;"></div>
+    <div class="particle" style="top:10px;left:100px;"></div>
+    <div class="particle" style="top:80px;left:30px;"></div>
+  </div>
+
+  <nav>
+    <a href="#rangos">Rangos</a>
+    <a href="#info">Información</a>
+    <a href="#discord">Discord</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Bienvenido a CLR HCF</h2>
+  <p>El mejor servidor HCF PvP competitivo</p>
+</div>
+
+<section id="rangos">
+  <h2>Rangos Disponibles</h2>
+  <div class="rangos">
+    <img src="https://i.imgur.com/XhsPR0n.png" alt="Rango Owner">
+    <img src="https://i.imgur.com/wig3ZCF.png" alt="Rango Partner">
+    <img src="https://i.imgur.com/14XDUGj.png" alt="Rango Member">
+  </div>
+</section>
+
+<section id="info">
+  <h2>¿Qué es CLR HCF?</h2>
+  <p>CLR HCF es un servidor hardcore factions donde vivirás la mejor experiencia PvP con mapa kitmap, bases, clanes y eventos diarios.</p>
+  <div class="info">
+    <img src="https://i.imgur.com/P1P0RR9.png" alt="PvP">
+    <img src="https://i.imgur.com/2OjjJHC.png" alt="Bases HCF">
+  </div>
+</section>
+
+<section id="discord">
+  <h2>Únete a nuestro Discord</h2>
+  <a class="btn-discord" href="https://discord.gg/4BUPjas4" target="_blank">Entrar a Discord</a>
+</section>
+
+<footer>
+  © 2025 CLR HCF - Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
